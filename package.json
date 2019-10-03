@@ -1,0 +1,28 @@
+{
+  "name": "thejohnsontrio",
+  "version": "1.0.0",
+  "description": "The Johnson Trio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruce773/thejohnsontrio.git"
+  },
+  "author": "Bruce Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bruce773/thejohnsontrio/issues"
+  },
+  "homepage": "https://github.com/Bruce773/thejohnsontrio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "webpack": "^4.41.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6"
+  }
+}
