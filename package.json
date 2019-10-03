@@ -4,7 +4,9 @@
   "description": "The Johnson Trio site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon ./server/index.js",
+    "start": "concurrently --kill-others \"npm run build\"  \"npm run server\" ",
+    "build": "webpack --watch -p"
   },
   "repository": {
     "type": "git",
