@@ -9,6 +9,6 @@ export const NavWrapper = styled(Paper)`
 `;
 
 export const NavItem = styled.div`
-  font-size: 20px;
+  font-size: 26px;
   display: inline;
 `;
