@@ -5,6 +5,8 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import { Container } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import { BioHeader } from './elements.jsx';
 
 const BiosInfo = [
   {
@@ -28,8 +30,14 @@ export const AboutPage = () => (
     {BiosInfo.map(({ imageUrl, name, bio }) => (
       <ExpansionPanel>
         <ExpansionPanelSummary>
-          <Avatar src={imageUrl} />
-          <Typography>{name}</Typography>
+          <Grid container>
+            <Grid item md={6} xs={12}>
+              <Avatar src={imageUrl} />
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <BioHeader>{name}</BioHeader>
+            </Grid>
+          </Grid>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>{bio}</Typography>
