@@ -1,16 +1,16 @@
 import React from 'react';
 import { Navbar } from './Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { DevTodo } from './GlobalComponents';
+import { HomePage } from './HomePage';
+import { AboutPage } from './AboutPage';
 
 export const App = () => (
   <Router>
     <Navbar />
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center', marginTop: '10px' }}>
       <Switch>
-        <Route path="/">
-          <DevTodo>Add homepage hero banner</DevTodo>
-        </Route>
+        <Route exact path="/" render={() => <HomePage />} />
+        <Route path="/about/" render={() => <AboutPage />} />
       </Switch>
     </div>
   </Router>
