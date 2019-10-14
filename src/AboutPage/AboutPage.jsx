@@ -1,13 +1,7 @@
 import React from 'react';
-import { Avatar } from './Avatar.jsx';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import Typography from '@material-ui/core/Typography';
 import { Container } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import { BioHeader } from './elements.jsx';
 import { AboutCardPlaceholder } from './AboutCardPlaceholder.jsx';
+import { AboutPageCard } from './AboutPageCard.jsx';
 
 export const AboutPage = ({ siteData, isLoading }) => (
   <Container maxWidth="md">
@@ -22,26 +16,11 @@ export const AboutPage = ({ siteData, isLoading }) => (
           } = data;
           const bio = content[0].content[0].value;
           return (
-            <ExpansionPanel>
-              <ExpansionPanelSummary>
-                <Grid container>
-                  <Grid item md={6} xs={12}>
-                    <Avatar src={headshotUrl} />
-                  </Grid>
-                  <Grid item md={6} xs={12}>
-                    <BioHeader>{fullName}</BioHeader>
-                  </Grid>
-                </Grid>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
-                <Typography
-                  style={{ fontSize: '20px' }}
-                  dangerouslySetInnerHTML={{
-                    __html: bio,
-                  }}
-                />
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
+            <AboutPageCard
+              bio={bio}
+              fullName={fullName}
+              headshotUrl={headshotUrl}
+            />
           );
         })
       : [1, 2, 3, 4].map(() => <AboutCardPlaceholder />)}
