@@ -13,7 +13,6 @@ export const AboutPageCard = ({ bio, fullName, headshotUrl }) => {
   return (
     <ExpansionPanel
       onChange={() => {
-        console.log(readMoreLabel);
         setReadMoreLabel(!readMoreLabel);
       }}
     >

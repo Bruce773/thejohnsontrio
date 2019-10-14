@@ -16,7 +16,7 @@ export const Navbar = () => {
               style={{
                 maxHeight: '63px',
                 minHeight: '5vw',
-                borderRadius: '10px',
+                borderRadius: '30px',
               }}
               src="https://ik.imagekit.io/3aek1kxt2/possibleLogo2.jpg?tr=w-200"
             />
