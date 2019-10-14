@@ -18,7 +18,7 @@ export const Navbar = () => {
                 minHeight: '5vw',
                 borderRadius: '10px',
               }}
-              src="https://elasticbeanstalk-us-east-2-555764942973.s3.us-east-2.amazonaws.com/possibleLogo2.jpg"
+              src="https://ik.imagekit.io/3aek1kxt2/possibleLogo2.jpg?tr=w-200"
             />
           </IconButton>
         </Link>
