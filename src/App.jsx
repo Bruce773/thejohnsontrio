@@ -20,7 +20,6 @@ export const App = () => {
     client
       .getEntries({ order: 'sys.createdAt' })
       .then(({ items }) => {
-        console.log(items);
         setSiteData(items);
         setIsLoading(false);
       })
