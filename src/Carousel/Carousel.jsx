@@ -10,5 +10,13 @@ export const Carousel = ({ items }) => {
     slidesToScroll: 1,
   };
 
-  return <Slider {...settings}>{items.map((item) => item)}</Slider>;
+  console.log(items);
+
+  return (
+    <Slider {...settings}>
+      {items.map((item) => (
+        <img src={item} width="100%" height="auto" />
+      ))}
+    </Slider>
+  );
 };
