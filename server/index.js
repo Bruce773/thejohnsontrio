@@ -7,5 +7,6 @@ app.use(express.static(path.join(__dirname + '/../dist')));
 
 app.use('/', express.static(path.join(__dirname + '/../dist')));
 app.use('/about', express.static(path.join(__dirname + '/../dist')));
+app.use('/music', express.static(path.join(__dirname + '/../dist')));
 
 app.listen(port, () => console.log(`App running on port ${port}`));

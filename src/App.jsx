@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { HomePage } from './HomePage';
 import { AboutPage } from './AboutPage';
 import { Footer } from './Footer';
+import { MusicPage } from './MusicPage';
 
 export const App = () => (
   <Router>
@@ -12,6 +13,7 @@ export const App = () => (
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
         <Route path="/about/" render={() => <AboutPage />} />
+        <Route path="/music/" render={() => <MusicPage />} />
       </Switch>
     </div>
     <Footer />

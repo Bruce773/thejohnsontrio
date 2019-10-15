@@ -25,7 +25,9 @@ export const Navbar = () => {
         <Link to="/about">
           <Button color="inherit">About</Button>
         </Link>
-        <Button color="inherit">Music</Button>
+        <Link to="/music">
+          <Button color="inherit">Music</Button>
+        </Link>
       </Toolbar>
     </AppBar>
   );
